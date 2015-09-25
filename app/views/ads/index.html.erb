@@ -1,0 +1,12 @@
+<table border=1>
+<tr>
+  <td>A hirdetés neve</td>
+  <td>Leírás</td>
+</tr>
+<% @ads.each do |f| %>
+<tr>
+  <td><%= f.title %></td>
+  <td><%= f.description %></td>
+</tr>
+<% end %>
+</table>
