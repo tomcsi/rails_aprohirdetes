@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'ads#index'
   get 'new' => 'ads#new' 
+  get 'edit' => 'ads#index_with_edit'
   resources :ads, only: [:new, :create]
+  
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

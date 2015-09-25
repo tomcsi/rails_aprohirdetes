@@ -18,6 +18,13 @@ class AdsController < ApplicationController
     
     end
 
+    def index_with_edit
+      @ads = Ad.all
+    end
+
+    def index_with_destroy
+
+    end
  
 private
   def ad_params
